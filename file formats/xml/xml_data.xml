@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person id="1">
+        <fname>James</fname>
+        <lname>Earl</lname>
+    </person>
+    <person id="2">
+        <fname>Dani</fname>
+        <lname>G</lname>
+    </person>
+</people>
