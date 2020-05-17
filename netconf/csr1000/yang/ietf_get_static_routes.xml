@@ -1,0 +1,25 @@
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <routing xmlns="urn:ietf:params:xml:ns:yang:ietf-routing">
+    <routing-instance>
+      <name/>
+      <type/>
+      <enabled/>
+      <router-id/>
+      <description/>
+      <routing-protocols>
+        <routing-protocol>
+          <type>static</type>
+          <name/>
+          <description/>
+          <static-routes/>
+        </routing-protocol>
+      </routing-protocols>
+    </routing-instance>
+  </routing>
+  <fib-route xmlns="urn:ietf:params:xml:ns:yang:ietf-routing">
+    <route>
+      <active/>
+      <last-updated/>
+    </route>
+  </fib-route>
+</filter>

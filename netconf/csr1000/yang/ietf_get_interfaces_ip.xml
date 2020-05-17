@@ -1,0 +1,18 @@
+<filter xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces" xmlns:ip="urn:ietf:params:xml:ns:yang:ietf-ip">
+    <interface>
+      <name>{interface}</name>
+      <description/>
+      <type/>
+      <enabled/>
+      <link-up-down-trap-enable/>
+      <ip:ipv4>
+        <ip:address>
+          <ip:ip/>
+          <ip:prefix-length/>
+          <ip:netmask/>
+        </ip:address>
+      </ip:ipv4>
+    </interface>
+  </interfaces>
+</filter>
