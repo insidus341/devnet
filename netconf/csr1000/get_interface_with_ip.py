@@ -6,7 +6,7 @@ from device_configs.csr_1000_devnet import router
 from tools.tools import try_print
 
 filter_template = open(
-    'yang/ietf_get_interfaces_ip.xml'
+    'netconf\csr1000\yang/ietf_get_interfaces_ip.xml'
 ).read()
 
 netconf_filter = filter_template.format(
