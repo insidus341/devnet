@@ -1,7 +1,7 @@
 import requests
 import json
+from tools.api_key_webex import key
 
-key = 'NDQ0ZTQ4ZTUtMDNhOC00MmE2LTgyZjYtNTUwODA4OTYwNDJlMDA2YzllMGQtY2Ew_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
 url = "https://webexapis.com/v1/teams"
 
 request = requests.session()

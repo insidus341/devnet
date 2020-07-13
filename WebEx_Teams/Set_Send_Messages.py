@@ -1,10 +1,11 @@
 import requests
 import json
 from Get_Room import get_room
+from tools.api_key_webex import key
+
 room_id = get_room('WebEx Automation')
 print(room_id)
 
-key = 'NDQ0ZTQ4ZTUtMDNhOC00MmE2LTgyZjYtNTUwODA4OTYwNDJlMDA2YzllMGQtY2Ew_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f'
 url = "https://webexapis.com/v1/messages"
 
 request = requests.session()
@@ -15,7 +16,7 @@ request.headers = {
 
 data = {
     "roomId": room_id,
-    "text": "Automated message via Python"
+    "text": "This is a new message"
 }
 
 # data=json.dumps(data) is not working

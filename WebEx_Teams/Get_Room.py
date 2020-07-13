@@ -8,9 +8,12 @@ def get_room(_title):
     room_team_id = None
 
     for room in get_rooms():
-        room_title = room['title']
-        room_id = room['id']
-        room_team_id = room['teamId']
+        try: 
+            room_title = room['title']
+            room_id = room['id']
+            room_team_id = room['teamId']
+        except:
+            continue
 
         if room_title == _title:
             return room_id

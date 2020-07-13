@@ -13,10 +13,5 @@ url = 'https://{}/ins'.format(router['host'])
 cmd = 'show ip int brief'
 showcmd = get_command(cmd)
 
-response = session.post(
-    url,
-    data=json.dumps(showcmd),
-    verify=False,
-).json()
-
+response = session.post(url, data=json.dumps(showcmd), verify=False).json()
 print(response)

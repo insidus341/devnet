@@ -5,7 +5,7 @@ from ncclient import manager
 from device_configs.csr_1000_devnet import router
 
 filter_template = open(
-    'yang/ietf_get_interfaces.xml'
+    'netconf/csr1000/yang/ietf_get_interfaces.xml'
 ).read()
 
 netconf_filter = filter_template.format(

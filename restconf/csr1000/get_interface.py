@@ -16,10 +16,15 @@ container = 'Cisco-IOS-XE-interfaces-oper'
 leaf = 'interfaces'
 request = 'interface'
 value = 'GigabitEthernet3'
-url = "https://{}:{}/restconf/data/{}:{}/{}={}".format(host, port, container, leaf, request, value)
+# url = "https://{}:{}/restconf/data/{}:{}/{}={}".format(host, port, container, leaf, request, value)
+url = "https://{}:{}/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet3".format(host, port)
 
 response = session.get(url, verify=False)
+print(response)
+print(response.status_code)
 json_response = response.json()
+print(json_response)
+exit()
 
 interface = response.json()["{}:{}".format(container, request)]
 
